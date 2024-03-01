@@ -1,24 +1,6 @@
 
 # TWO Tier app deployment on AWS EKS
 
-**Architecture**
-
-![1699574419086](https://github.com/harshilp156/two-tier-app-deployment/assets/67538347/8d55746f-174b-470d-9669-d199690799a5)
-
-
-Situation : Deployed a two tier flask app backed with MYSQL database to be able to handle 10,000 concurrent users.
-
-Task : Dockerized the application along with kubeadm cluster setup for kubernetes deployment and later deployment on AWS EKS using helm chart for fault tolerance.
-
-Action: 
-- Used docker and docker compose to containerize the application and pushed images to DockerHub repository for versioning.
-- Automated the kubernetes clusterusing kubeadm and later AWS EKS with eksctl
-- Packaged the Kubernetes  Manifest files using Helm and deployed the application on AWS EKS.
-- Ensured multi-node cluster setup for high avaibility and deployment using load balancer.
-
-Result: Improved scalability of the application to 10,000 concurrent users and reduced downtime by 70% using AWS managed Elastic Kubernetes Service(EKS).
-
-This project involves the deployment of a two-tier Flask application, backed with a MySQL database, to be able to handle up to 10,000 concurrent users. The aim is to enhance scalability and minimize downtime by using Docker containers and Kubernetes orchestration. With AWS EKS (Elastic Kubernetes Service), the deployment is optimized for fault tolerance and high availability.
 
 **Architecture**
 
